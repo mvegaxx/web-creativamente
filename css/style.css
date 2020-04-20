@@ -6783,4 +6783,13 @@ h6 {
   font-size: 12px;
 }
 
+/* custom agency css*/
+.logo a img {
+  height: 34px;
+}
+
+.main-header-area {
+  padding: 17px 20px;
+}
+
 /*# sourceMappingURL=style.css.map */
