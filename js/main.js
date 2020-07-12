@@ -1,9 +1,9 @@
 (function ($) {
 "use strict";
 // TOP Menu Sticky
-$(window).on('scroll', function () {
-	var scroll = $(window).scrollTop();
-	if (scroll < 400) {
+$('body').on('scroll', function () {
+	var scroll = $('body').scrollTop();
+	if (scroll < 200) {
     $("#sticky-header").removeClass("sticky");
     $('#back-top').fadeIn(500);
 	} else {
