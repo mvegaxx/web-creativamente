@@ -767,11 +767,10 @@ h3 {
 
 /* line 13, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slick-nav.scss */
 .slicknav_menu .slicknav_nav {
-  background: #fff;
-  float: right;
+  background: #3b3b3b5b;
+  /* float: right; */
   margin-top: 0;
   padding: 0;
-  width: 95%;
   padding: 0;
   border-radius: 0px;
   margin-top: 5px;
@@ -779,18 +778,34 @@ h3 {
   left: 0;
   right: 0;
   margin: auto;
-  top: 11px;
+  top: 10px;
+  height: 100vh;
+  backdrop-filter: blur(4px);
 }
+
+.slicknav_menu ul.slicknav_nav {
+  flex-direction: column;
+  padding-top: 20vh;
+  align-items: center;
+}
+
+.slicknav_menu .slicknav_nav a{
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 17px;
+}
+
 
 /* line 28, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slick-nav.scss */
 .slicknav_menu .slicknav_nav a:hover {
   background: transparent;
-  color: #5DB2FF;
+  color: #D465EF;
 }
 
 /* line 32, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slick-nav.scss */
 .slicknav_menu .slicknav_nav a.active {
-  color: #5DB2FF;
+  color: #D465EF;
 }
 
 @media (max-width: 767px) {
@@ -898,7 +913,7 @@ h3 {
   /* line 16, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_header.scss */
   .header-area .main-header-area {
     padding: 10px 0px;
-    background: #2C2C2C;
+    background: #2C2C2C00;
   }
 }
 
@@ -906,7 +921,7 @@ h3 {
   /* line 16, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_header.scss */
   .header-area .main-header-area {
     padding: 10px 15px;
-    background: #2C2C2C;
+    background: #2C2C2C00;
   }
 }
 
@@ -1398,8 +1413,21 @@ h3 {
 @media (max-width: 767px) {
   /* line 21, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
   .slider_area .single_slider .social_links {
-    display: none;
+    width: 100vw;
+    bottom: 0px;
+    top: auto;
+    right: 0;
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
   }
+  .slider_area .single_slider .social_links ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
 }
 
 /* line 31, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
@@ -1484,20 +1512,21 @@ h3 {
 @media (max-width: 767px) {
   /* line 74, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
   .slider_area .single_slider::before {
+    /* position: absolute;
     width: 314px;
     height: 300px;
     content: '';
-    background-size: cover;
+    background-size: cover; */
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 74, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
   .slider_area .single_slider::before {
-    width: 370px;
+    /* width: 370px;
     height: 370px;
     content: '';
-    background-size: cover;
+    background-size: cover; */
   }
 }
 
@@ -1534,14 +1563,14 @@ h3 {
 @media (max-width: 767px) {
   /* line 8, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
   .slider_area .single_slider {
-    height: 500px;
+    /* height: 100vh; */
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 8, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
   .slider_area .single_slider {
-    height: 620px;
+    /* height: 620px; */
   }
 }
 
@@ -6800,6 +6829,13 @@ h6 {
 
 .main-header-area {
   padding: 17px 20px;
+}
+
+@media  (max-width: 991px) {
+  /* line 16, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_header.scss */
+  .logo a img {
+    height: 25px !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
